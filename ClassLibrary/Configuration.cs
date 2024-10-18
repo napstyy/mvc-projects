@@ -76,7 +76,12 @@ namespace ClassLibrary
             set { timerOutcome = value; }
         }
 
+        public bool TotalBoxes()
+        {
+            int totalBoxes = MonsterBoxes + HealthkitBoxes + EmptyBoxes; 
 
+            return totalBoxes == 5;
+        }
 
 
 
